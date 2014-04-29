@@ -21,7 +21,7 @@ PACKAGENAME = 'kcorrect'
 DESCRIPTION = 'Python bindings for the Blanton et al. 2007 Kcorrect code. (Astropy affiliated package)'
 LONG_DESCRIPTION = kcorrectdoc
 AUTHOR = 'Taro Sato'
-AUTHOR_EMAIL = 'ubutsu@gmail.com'
+AUTHOR_EMAIL = 'taro@okomestudio.com'
 LICENSE = 'BSD'
 URL = 'http://github.com/astropy/kcorrect'
 
