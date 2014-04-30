@@ -1,7 +1,8 @@
 include README.rst
 
-include distribute_setup.py
-recursive-include kcorrect *.pyx *.c
+include setuptools_bootstrap.py
+include setup.cfg
+recursive-include kcorrect *.pyx *.c *.h
 
 recursive-include docs *
 recursive-include licenses *
