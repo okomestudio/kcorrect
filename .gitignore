@@ -14,6 +14,7 @@ __pycache__
 
 # Sphinx
 _build
+docs/api
 
 # Packages/installer info
 *.egg
@@ -27,8 +28,30 @@ var
 sdist
 develop-eggs
 .installed.cfg
+lib
 distribute-*.tar.gz
+MANIFEST
+
+# test coverage
+htmlcov
+.coverage
 
 # Other
 .*.swp
 *~
+.tox
+
+# Mac OSX
+.DS_Store
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# editors
+.swp
