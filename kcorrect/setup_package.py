@@ -154,7 +154,9 @@ def get_extensions():
 
 def get_package_data():
     # Installs the testing data files
-    api_files = ['kcorrect.h']
-    api_files = [join('include', x) for x in api_files]
+    #api_files = ['kcorrect.h']
+    #api_files = [join('include', x) for x in api_files]
+    #return {str('kcorrect'): api_files}
 
-    return {str('kcorrect'): api_files}
+    return {str('kcorrect'): ['data/filters/*.par',
+                              'data/templates/*.dat']}

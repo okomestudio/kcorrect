@@ -69,7 +69,7 @@ try:
     package_info = get_package_info(PACKAGENAME)
 
     # Add the project-global data
-    package_info['package_data'][PACKAGENAME] = ['data/*']
+    #package_info['package_data'][PACKAGENAME] = ['data/*']
 
 except ImportError: # compatibility with Astropy 0.2 - can be removed in cases
                     # where Astropy 0.2 is no longer supported
@@ -86,7 +86,7 @@ except ImportError: # compatibility with Astropy 0.2 - can be removed in cases
     package_info['ext_modules'] = []
 
     # A dictionary to keep track of all package data to install
-    package_info['package_data'] = {PACKAGENAME: ['data/*']}
+    #package_info['package_data'] = {PACKAGENAME: ['data/*']}
 
     # A dictionary to keep track of extra packagedir mappings
     package_info['package_dir'] = {}
