@@ -142,11 +142,14 @@ def get_extensions():
     ## if sys.platform.startswith('linux'):
     ##     cfg['define_macros'].append(('HAVE_SINCOS', None))
 
+    cfg['sources'].append('kcorrect/cext.pxd')
+    cfg['sources'].append('kcorrect/ext.pyx')
+
     cfg['sources'] = [str(x) for x in cfg['sources']]
 
     cfg = dict((str(key), val) for key, val in six.iteritems(cfg))
 
-    return [Extension(str('kcorrect._clib'), **cfg)]
+    return [Extension(str('kcorrect.ext'), **cfg)]
 
 
 def get_package_data():
