@@ -4,7 +4,7 @@ Global definitions.
 """
 from __future__ import print_function, division
 import os
-from numpy import float32
+from numpy import float32, int32
 
 
 KCORRECT_DIR = os.path.relpath(os.path.dirname(__file__))
@@ -29,6 +29,9 @@ VNAME = 'default'
 
 # within the kcorrect C library, float C type is consistently used.
 FTYPE = float32
+
+# must be equivalent to IDL_LONG
+ITYPE = int32
 
 # filter definition file extension
 FILTEREXT = '.par'
